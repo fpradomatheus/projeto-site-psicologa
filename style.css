@@ -1,0 +1,782 @@
+/* =========================================================
+   GLOBAL
+========================================================= */
+
+body {
+    margin: 0;
+    font-family: "Inter", sans-serif;
+    color: #965f3f;
+    background: #ebdbcb;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* =========================================================
+   HERO SECTION
+========================================================= */
+
+.hero {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 80px 7%;
+    overflow: hidden;
+    min-height: 85vh;
+}
+
+.curve {
+    position: absolute;
+    left: -10%;
+    top: -20%;
+    width: 120%;
+    height: 150%;
+    background: #F7F2EE;
+    border-bottom-left-radius: 60% 40%;
+    border-bottom-right-radius: 60% 40%;
+    z-index: -1;
+}
+
+/* TEXT */
+
+.hero-text {
+    max-width: 520px;
+    z-index: 10;
+}
+
+.hero-text small {
+    font-size: 12px;
+    letter-spacing: 2px;
+    font-weight: 500;
+    color: #965f3f;
+}
+
+.hero-text h1 {
+    font-family: "Playfair Display", serif;
+    font-size: 54px;
+    line-height: 1.2;
+    margin: 12px 0 25px;
+    font-weight: 600;
+}
+
+.subtitle {
+    font-size: 18px;
+    color: #965f3f;
+    margin-bottom: 10px;
+}
+
+.desc {
+    font-size: 17px;
+    line-height: 1.6;
+    color: #965f3f;
+}
+
+
+/* IMAGE */
+
+.hero-image img {
+    width: 440px;
+    max-width: 100%;
+    border-radius: 6px;
+    object-fit: cover;
+}
+
+.hero-logo {
+    position: absolute;
+    top: 70px;
+    left: 6%;
+    height: 100px;
+    z-index: 20;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 18px;
+    margin-top: 30px;
+    text-decoration: none;
+}
+
+.btn-primary {
+    background: #965f3f;
+    color: #F7F2EE;
+    padding: 15px 28px;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+
+.btn-secondary {
+    background: transparent;
+    border: 2px solid #965f3f;
+    color: #965f3f;
+    padding: 13px 26px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+
+
+/* =========================================================
+   ABOUT SECTION
+========================================================= */
+
+.sobre {
+    background: #d8c9bb;
+    padding: 100px 7%;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+.sobre-container {
+    display: flex;
+    gap: 60px;
+    align-items: flex-start;
+}
+
+.sobre-left {
+    flex: 1;
+    max-width: 360px;
+}
+
+.sobre-title {
+    font-size: 48px;
+    font-weight: 600;
+    font-family: "Playfair Display", serif;
+    color: #965f3f;
+    margin-bottom: 20px;
+    line-height: 1.1;
+}
+
+.sobre-subtitle {
+    font-size: 48px;
+    font-weight: 600;
+    font-family: "Playfair Display", serif; 
+    color: #965f3f;
+    margin-bottom: 10px;
+    line-height: 1.1;
+}
+
+.sobre-right {
+    flex: 2;
+    font-size: 16px;
+    color: #965f3f;
+    line-height: 1.6;
+    font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+.sobre-photo {
+    width: 320px;
+    height: 480px;
+    object-fit: cover;
+    border-radius: 20px;
+    align-self: flex-end;
+}
+
+/* =========================================================
+   ABORDAGEM SECTION (PEDIDO)
+========================================================= */
+
+.abordagem {
+    background: #F7F2EE;
+    padding: 100px 7%;
+}
+
+.container-abordagem {
+    display: grid;
+    grid-template-columns: 1fr 1fr 0.9fr; /* 3 colunas reais */
+    align-items: start;
+    justify-content: center;
+    gap: 50px;
+}
+
+.abordagem-subtitle {
+    font-size: 48px;                     /* igual ao about-subtitle */
+    font-weight: 600;
+    font-family: "Playfair Display", serif;
+    color: #965f3f;
+    margin-bottom: 18px;
+    line-height: 1.1;
+}
+
+.coluna {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    color: #965f3f;
+}
+
+.coluna h2 {
+    font-family: "Playfair Display", serif;
+    font-size: 42px;
+    margin-bottom: 20px;
+    color: #965f3f;
+}
+
+.coluna p {
+    line-height: 1.7;
+    font-size: 16px;
+    margin-bottom: 18px;
+}
+
+.coluna-texto {
+    text-align: justify;
+    text-justify: inter-word; /* melhora a distribuição das palavras */
+}
+
+.coluna-texto p {
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+
+/* IMAGEM */
+
+.img-abordagem {
+    width: 100%;
+    aspect-ratio: 3/4; /* igual ao SOBRE */
+    object-fit: cover;
+    border-radius: 20px;
+    display: block;
+}
+
+/* ============================= 
+           SESSÃO SERVIÇOS        
+============================= */
+
+/* sessão servicos */
+.servicos {
+    padding: 40px 20px !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    text-align: center !important;
+  }
+  
+  /* UL: lista em linha (flex) */
+  .servicos .lista-linha {
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: nowrap !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 28px !important;
+  
+    width: max-content !important;         /* caixa cresce conforme os itens */
+    max-width: 100% !important;            /* mas não ultrapassa a tela */
+    margin: 0 auto !important;
+  
+    background: #F7F2EE !important;
+    padding: 18px 28px !important;
+    border-radius: 12px !important;
+    box-sizing: border-box !important;
+  
+    list-style: none !important;
+  }
+  
+  /* LI: cada item como caixa flex com marcador custom */
+  .servicos .lista-linha li {
+    display: inline-flex !important;
+    align-items: center !important;
+    gap: 10px !important;
+    margin: 0 !important;
+    padding: 6px 8px !important;
+    text-align: left !important;
+    white-space: nowrap !important;        /* impede quebra dentro do item */
+    font-family: inherit;
+    font-size: 16px !important;
+    color: #965f3f !important;
+    background: transparent !important;    /* sem fundo nos lis */
+    border-radius: 6px !important;
+  }
+  
+  /* marcador custom usando ::before (melhor compatibilidade dentro de flex) */
+  .servicos .lista-linha li::before {
+    content: '•';
+    display: inline-block;
+    font-size: 18px;
+    line-height: 1;
+    margin-right: 6px;
+    color: #965f3f;                         /* cor do marcador igual ao título */
+    transform: translateY(0);              /* centraliza verticalmente */
+  }
+  
+  /* se quiser o marcador menor: ajuste font-size acima */
+  
+  /* TÍTULO */
+  .servicos .titulo-servicos {
+    font-size: 48px !important;
+  }
+  
+  .titulo-servicos {
+    font-size: 48px;
+    font-weight: 600;
+    font-family: "Playfair Display", serif;
+    color: #965f3f;
+    margin-bottom: 18px;
+    line-height: 1.1;
+  }
+  
+    .servicos .lista-linha li {
+      width: 100%;
+      justify-content: center;
+    }
+
+
+/* ============================= 
+           SESSÃO EXPERIENCIA        
+============================= */
+
+/* =========================================================
+   ABORDAGEM SECTION (PEDIDO)
+========================================================= */
+
+.experiencia {
+    background: #F7F2EE;
+    padding: 100px 7%;
+}
+
+.container-experiencia {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; /* 3 colunas iguais */
+    gap: 50px;
+    align-items: start; /* alinha todo mundo no topo */
+}
+
+.coluna {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    color: #965f3f;
+}
+
+.coluna h2 {
+    font-family: "Playfair Display", serif;
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.coluna p {
+    text-align: justify;
+    text-justify: inter-word;
+    line-height: 1.7;
+    font-size: 16px;
+    margin-bottom: 18px;
+}
+
+/* =============================
+            FOOTER
+============================= */
+
+.footer {
+    background-color: #d8c9bb;
+    padding: 70px 7% 40px;
+    color: #965f3f;
+    font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 50px;
+}
+
+.footer-col h3 {
+    font-family: "Playfair Display", serif;
+    font-size: 22px;
+    margin-bottom: 18px;
+    color: #965f3f;
+}
+
+.footer-logo {
+    width: 300px;
+    margin-bottom: 18px;
+}
+
+.footer-desc {
+    font-size: 15px;
+    line-height: 1.6;
+    color: #F7F2EE;
+    text-align: justify;
+}
+
+.footer-col ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-col ul li {
+    margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+    text-decoration: none;
+    color: #F7F2EE;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+.footer-col ul li a:hover {
+    color: #F7F2EE;
+}
+
+.footer-whatsapp {
+    display: inline-block;
+    margin-top: 12px;
+    padding: 10px 18px;
+    background-color: #F7F2EE;
+    color: #965f3f;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+.footer-whatsapp:hover {
+    background-color: #965f3f;
+}
+
+.social-icons img {
+    width: 24px;
+    margin-right: 12px;
+    transition: 0.3s;
+}
+
+.social-icons img:hover {
+    opacity: 0.7;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 14px;
+    color: #965f3f;
+}
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width: 1000px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding-top: 120px;
+        gap: 40px;
+    }
+
+    .hero-image img {
+        width: 90%;
+    }
+
+    .about-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-photo {
+        margin: 0 auto;
+    }
+
+    .grid-abordagem {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+}
+
+
+/* ========== Forçar JUSTIFY na coluna do meio ========== */
+/* Use com alta especificidade para não ser sobrescrito por regras anteriores */
+
+.grid-abordagem .coluna-texto,
+.grid-abordagem .coluna-texto p {
+  text-align: justify !important;       /* força o alinhamento justificado */
+  text-justify: inter-word !important;  /* melhora espaçamento entre palavras */
+  hyphens: auto !important;             /* quebra silábica quando suportado */
+  -webkit-hyphens: auto !important;
+  -ms-hyphens: auto !important;
+  -moz-hyphens: auto !important;
+  -webkit-text-size-adjust: 100%;
+}
+
+/* Garante que a última linha também tente justificar (suporte: Chrome/Edge/Firefox) */
+.grid-abordagem .coluna-texto p {
+  text-align-last: justify !important;
+  -moz-text-align-last: justify !important;
+}
+
+/* Hack suave para navegadores que não suportam text-align-last:
+   adiciona um elemento inline invisível para forçar a distribuição */
+.grid-abordagem .coluna-texto p::after {
+  content: "";
+  display: inline-block;
+  width: 100%;
+  height: 0;
+  visibility: hidden;
+}
+
+/* Caso você tenha regras que definem display em .coluna-texto, garanta bloco */
+.grid-abordagem .coluna-texto {
+  display: block !important;
+}
+
+/* Responsivo: mantém a legibilidade em telas pequenas */
+@media (max-width: 1000px) {
+  .grid-abordagem .coluna-texto,
+  .grid-abordagem .coluna-texto p {
+    text-align: justify !important;
+    text-align-last: left !important; /* último alinhamento fica à esquerda em mobile para melhor leitura */
+  }
+}
+
+/* Justificar texto da coluna do meio */
+.coluna-2 p {
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+/* Justificar texto da seção Quem Sou */
+.about-text p {
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.about-text p {
+    text-align: justify !important;
+    text-justify: inter-word !important;
+}
+
+/* Justificar texto da coluna 1 da seção abordagem */
+.coluna-1,
+.coluna-1 p {
+  text-align: justify;
+  text-justify: inter-word;
+  hyphens: auto;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  -ms-hyphens: auto;
+}
+
+/* =========================================================
+   MOBILE FIX – NÃO ALTERA O DESKTOP
+========================================================= */
+@media (max-width: 768px) {
+
+    /* 1) HERO — logo em cima, texto embaixo, nada sobrepondo */
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 120px 7% 60px;
+        gap: 30px;
+    }
+
+    .hero-logo {
+        position: static;
+        margin-bottom: 10px;
+        height: 80px;
+    }
+
+    .hero-text {
+        max-width: 100%;
+    }
+
+    .hero-text h1 {
+        font-size: 40px;
+    }
+
+    .hero-text p {
+        font-size: 16px;
+    }
+
+    .hero-buttons {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+
+    /* 2) QUEM SOU EU — texto centralizado e imagem abaixo */
+    .sobre {
+        flex-direction: column;
+        text-align: center;
+        padding: 60px 7%;
+        gap: 30px;
+    }
+
+    .sobre-container {
+        flex-direction: column !important;
+        text-align: center;
+        gap: 25px;
+    }
+
+    .sobre-left {
+        order: 2;
+        max-width: 100%;
+    }
+
+    .sobre-right {
+        order: 1;
+        text-align: justify;
+        width: 100%;
+    }
+
+    .sobre-photo {
+        width: 90%;
+        max-width: 340px;
+        height: auto;
+        margin-top: 10px;
+        align-self: center;
+    }
+
+    .sobre-subtitle {
+        text-align: center;
+        font-size: 24;
+    }
+
+    /* ABORDAGEM */
+
+    .abordagem {
+        padding: 60px 7%;
+        text-align: center;
+        gap: 30px;
+    }
+
+    .container-abordagem {
+        grid-template-columns: 1fr !important;
+        gap: 25px;
+        text-align: center;
+    }
+
+
+    /* Texto das colunas centralizado mas JUSTIFICADO */
+    .coluna-1 {
+        text-align: justify;
+        text-justify: inter-word;
+        display: block;
+        width: 100%;
+        max-width: 100%;
+        text-align: center;
+        font-size: 24;
+    }
+
+    .coluna p {
+        text-align: justify;
+        text-justify: inter-word;
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    /* Imagem alinhada ao centro e abaixo */
+    .img-abordagem {
+        width: 90%;
+        max-width: 340px;
+        margin: 0 auto;
+        border-radius: 18px;
+        display: block;
+    }
+
+
+    /* 3) O QUE EU OFEREÇO — bullets alinhados */
+   
+    /* A caixa que envolve todos os itens */
+  .servicos .lista-linha {
+    display: block !important;
+    width: 95% !important;
+    max-width: 480px;
+    margin: 0 auto !important;
+
+    background: #F7F2EE !important;
+    padding: 20px 16px !important;
+    border-radius: 12px !important;
+    box-sizing: border-box;
+  }
+
+  /* A lista deixa de ser flex */
+  .servicos .lista-linha ul,
+  .servicos ul {
+    display: block !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    list-style: none !important;
+    width: 100% !important;
+  }
+
+  /* Cada item vira texto puro em coluna */
+  .servicos ul li {
+    display: block !important;
+    width: 100% !important;
+    text-align: center !important;
+
+    list-style: none !important;
+    margin: 10px 0 !important;
+    padding: 0 !important;
+  }
+    
+      /* Se houver div.lista-linha envolvendo, também desativa flex */
+      .servicos .lista-linha {
+        display: block !important;
+        width: 100% !important;
+        padding: 0 !important;
+        margin: 0 auto !important;
+        background: transparent !important;
+        border-radius: 0 !important;
+      }
+      
+
+    /* EXPERIENCIAS */
+
+    .experiencia {
+        padding: 60px 7%;
+        text-align: center;
+        gap: 30px;
+    }
+
+    .container-experiencia {
+        grid-template-columns: 1fr !important;
+        gap: 25px;
+        text-align: center;
+    }
+
+
+    /* Texto das colunas centralizado mas JUSTIFICADO */
+    .coluna-1 {
+        text-align: justify;
+        text-justify: inter-word;
+        display: block;
+        width: 100%;
+        max-width: 100%;
+        text-align: center;
+        font-size: 24;
+    }
+
+    .coluna p {
+        text-align: justify;
+        text-justify: inter-word;
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    /* 4) FOOTER — botão centralizado */
+    .footer-container {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .footer-col {
+        margin-bottom: 25px;
+    }
+
+    .footer-whatsapp {
+        margin: 0 auto;
+        display: inline-block;
+    }
+
+    .footer-logo {
+        margin: 0 auto 20px;
+        width: 240px;
+    }
